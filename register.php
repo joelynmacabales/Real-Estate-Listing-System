@@ -1,6 +1,7 @@
 <?php
 include_once("connection.php");
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars(trim($_POST['name']));
     $email = htmlspecialchars(trim($_POST['email']));
@@ -44,4 +45,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <a href="login.php">Back to Login</a>
 </body>
 </html>
-
